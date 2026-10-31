@@ -1,0 +1,14 @@
+name: ci
+
+# Fast, fixture-free checks only: full verification (builds, downloads, or a
+# browser) stays a local step (see README).
+on:
+  pull_request:
+    branches: [main]
+  push:
+    branches: [main]
+    tags: ["v*"]
+
+jobs:
+  check:
+    uses: buchanankerswell/actions/.github/workflows/validate-site.yml@v1

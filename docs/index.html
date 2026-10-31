@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#ffffff" id="themeColor" />
+    <title>mysite</title>
+    <link rel="stylesheet" href="tokens.css" />
+    <link rel="stylesheet" href="dialogs.css" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <a class="skip" href="#main">Skip to content</a>
+    <header class="bar">
+      <div class="bar-inner">
+        <div>
+          <h1>mysite</h1>
+          <p class="sub">TODO tagline</p>
+        </div>
+        <div class="bar-side">
+          <input
+            id="search"
+            type="search"
+            placeholder="/ to filter... (? help)"
+            aria-label="Filter entries"
+            autocomplete="off"
+          />
+          <button id="help_btn" class="pill" aria-label="Keyboard shortcuts and help">?</button>
+        </div>
+      </div>
+    </header>
+
+    <main class="layout" id="main">
+      <!-- TODO: site content -->
+    </main>
+
+    <div id="help" class="help" hidden role="dialog" aria-modal="true" aria-label="Keyboard shortcuts and help">
+      <div class="help-card" tabindex="-1">
+        <h2>Shortcuts</h2>
+        <dl class="help-list">
+          <div>
+            <dt><kbd>/</kbd></dt>
+            <dd>Jump to search</dd>
+          </div>
+          <div>
+            <dt><kbd>?</kbd></dt>
+            <dd>Toggle this help</dd>
+          </div>
+          <div>
+            <dt><kbd>Esc</kbd></dt>
+            <dd>Close</dd>
+          </div>
+          <!-- TODO: site shortcuts -->
+        </dl>
+      </div>
+    </div>
+
+    <script src="dialogs.js"></script>
+    <script src="app.js"></script>
+  </body>
+</html>

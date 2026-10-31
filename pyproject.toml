@@ -1,0 +1,14 @@
+# Metadata-only: this package is never built or published to PyPI.
+# Install via the conda environment (see environment.yml) instead.
+# No [build-system] table on purpose, so `pip install .` refuses to run.
+[project]
+name = "mysite"
+version = "0.0.0"
+description = "TODO one-line description"
+readme = "README.md"
+requires-python = ">=3.13"
+license = { text = "MIT" }
+authors = [{ name = "TODO", email = "TODO" }]
+
+[tool.pytest.ini_options]
+testpaths = ["pipeline"]
